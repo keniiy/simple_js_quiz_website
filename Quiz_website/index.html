@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Quiz Website</title>
+</head>
+<body>
+    <!-- Top section -->
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-danger display-3 my-4">QUIZ Website</h2>
+        </div>
+    </div>
+    <!-- Top section end -->
+
+    <!-- Result section -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You Are <span class="text-danger display-4 p-3">0%</span> good</p>
+        </div>
+    </div>
+    <!-- Result section end -->
+
+    <!-- Quiz section -->
+    <div class="quiz py-4 bg-danger">
+        <div class="container">
+            <h2 class="my-5 text-white">Answer the questions as a django developer  ..........</h2>
+            
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal">1. What does {% include %} does?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">It will include another template.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">It will include content from another template having the same templates defined.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="C">
+                        <label class="form-check-label">It is the same as {% extend %}.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="D">
+                        <label class="form-check-label">None of the above</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">2. What is Post.objects.all() is used for?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">It is used to bring all the objects stored in Post table.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">It is used to create a new Post object m.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="C">
+                        <label class="form-check-label">Post object will bring objects from database with SQL Query: Select *.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="D">
+                        <label class="form-check-label">None of the above</label>
+                    </div>
+                </div>  
+                <div class="my-5">
+                    <p class="lead font-weight-normal">3. What is the purpose of __str__() method?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">It will return the name of the post when Post object is printed.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">It displays a human-readable form of object.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="C">
+                        <label class="form-check-label">It will display the post_heading when __str__() is called.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="D">
+                        <label class="form-check-label">None of the above</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. What are Migrations in Django?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">Migrations are files where Django stores changes to your models.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">They are files saved in migrations directory.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="C">
+                        <label class="form-check-label">They are created when you run makemigrations command.</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="D">
+                        <label class="form-check-label">All of the above</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- Quiz section end-->
+
+<script src="app.js"></script>
+</body>
+</html>     
